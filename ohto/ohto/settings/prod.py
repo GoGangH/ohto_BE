@@ -58,7 +58,5 @@ LOGGING = {
 }
 
 ALLOWED_HOSTS = [
-    '43.200.92.0',
-    'ohto.kr',
-    'localhost'
+    '*',
 ]
