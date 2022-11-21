@@ -1,6 +1,7 @@
 FROM python:3.10
 
 RUN apt-get update && apt-get install vim -y
+RUN pip install --upgrade pip
 
 WORKDIR /django_project/
 ADD . /django_project/
