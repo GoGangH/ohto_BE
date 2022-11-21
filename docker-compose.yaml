@@ -6,6 +6,8 @@ services:
     build: ./server_nginx
     ports: 
       - "80:80"
+    volumes:
+      - ./log:/var/log/nginx
     depends_on: 
       - django
   mysql:
