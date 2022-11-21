@@ -37,7 +37,6 @@ from .common import *
 
 
 DEBUG = os.environ.get('DEBUG') in ['true','True']
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS','localhost').split(',')
 
 DATABASES = {
     'default':{
@@ -57,3 +56,9 @@ LOGGING = {
     "handlers":{"console":{"level":"ERROR", "class":"logging.StreamHandler"}},
     "loggers":{"django":{"handlers":["console"],"level":"ERROR"}}
 }
+
+ALLOWED_HOSTS = [
+    '43.200.92.0',
+    'ohto.kr',
+    'localhost'
+]
