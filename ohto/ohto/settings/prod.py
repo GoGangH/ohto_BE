@@ -86,3 +86,4 @@ LOGGING = {
     "handlers":{"console":{"level":"ERROR", "class":"logging.StreamHandler"}},
     "loggers":{"django":{"handlers":["console"],"level":"ERROR"}}
 }
+CORS_ALLOW_ALL_ORIGINS=True

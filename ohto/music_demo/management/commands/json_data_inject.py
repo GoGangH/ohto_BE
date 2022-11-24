@@ -10,7 +10,7 @@ class Command(BaseCommand):
 
     def handle(self,*args,**options):
         base_path= Path(__file__).resolve().parent.parent.parent
-        dataframe_path = os.path.join(base_path,'data','data_json_2.json')
+        dataframe_path = os.path.join(base_path,'data','final_data2.json')
         df = pd.read_json(dataframe_path)
         for idx,row in df.iterrows():
             title = row["title"]
