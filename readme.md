@@ -3,24 +3,26 @@
 ## 1. build image and download package for django
 
 ```
-docker-compose up
+docker-compose up -d
 ```
 ### this stage will probably cause error So,
 
-```
-control + c: for escaping
-```
-
-## 2. second build for proper linking between container
+## 2. Stop container using docker-compose stop
 
 ```
-docker-compose up
+docker-compose stop
+```
+
+## 3. second build for proper linking between container
+
+```
+docker-compose up -d
 ```
 
 ### after this command, all containers would be connected to each other
 
 
-## 3. data push
+## 4. data push
 
 ### attach to django container to push song data
 
